@@ -1,0 +1,17 @@
+package RecursionBackTracking;
+
+public class SortedArrayOrNotUsingRecursion {
+    public boolean isSorted(int[] arr,int n){
+        if(n==0){
+            return true;
+        }
+        if(arr[n]<arr[n-1]){
+            return false;
+        }
+        return isSorted(arr,n-1);
+    }
+
+    public static void main(String[] args) {
+        int arr[] ={1,2,3,4,5};
+    }
+}
